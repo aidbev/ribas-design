@@ -10,6 +10,8 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script>
       $(function(){
+        var d=-45;
+        var i=setInterval(function(){document.getElementById("circler").setAttributeNS(null, "transform", "rotate("+d+" 197.639 196.641)");d+=0.1},30);
         $("#btnhome").click(function(){
           $("#portfolio").fadeOut();
           $("#leftcol").fadeIn();
@@ -17,17 +19,10 @@
           $("#logo").fadeIn();
         });
         $("#btnportfolio").click(function(){
-          // var d=0;
-          // var i=setInterval(function(){document.getElementById("circler").setAttributeNS(null, "transform", "rotate("+d+" 197.639 196.641)");d+=1},20);
-          
-          //setTimeout(function(){
-            $("#logo").fadeOut();
-          //  }, 1000);
-          //setTimeout(function(){
-            $("#leftcol").fadeOut();
-            $("#rightcol").fadeOut();
-            $("#portfolio").fadeIn();
-          //}, 3000);
+          $("#logo").fadeOut();
+          $("#leftcol").fadeOut();
+          $("#rightcol").fadeOut();
+          $("#portfolio").fadeIn();
         });
       });
     </script>
@@ -229,26 +224,17 @@
       <div id="leftcol">Infinite possibilities.&nbsp;&nbsp;</div>
       <div id="rightcol">&nbsp;&nbsp;Definite results.</div>
 
-      <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-   width="500px" height="500px" viewBox="0 0 394.962 394.953" enable-background="new 0 0 394.962 394.953"
-   xml:space="preserve" opacity="0.1">
-<g>
-  <path id="circler" fill="#CCCCCC" d="M252.657,92.303c7.524,3.233,13.896,7.988,19.123,14.263c4.321,5.167,7.746,10.894,10.27,17.169
-    c2.519,6.275,3.783,13.432,3.783,21.461c0,9.694-2.459,19.229-7.364,28.596c-4.905,9.369-13.01,15.991-24.306,19.87
-    c9.402,3.798,16.065,9.187,19.985,16.167c3.918,6.985,5.882,17.653,5.882,31.997v13.749c0,9.349,0.373,15.689,1.129,19.023
-    c1.127,5.278,3.756,9.166,7.896,11.665v5.137h-47.062c-1.289-4.533-2.211-8.189-2.766-10.97
-    c-1.107-5.741-1.701-11.619-1.793-17.638l-0.276-19.022c-0.176-13.05-2.428-21.753-6.759-26.104s-12.45-6.527-24.352-6.527h-41.737
-    v80.262h-41.581V87.04h97.697C234.388,87.317,245.131,89.069,252.657,92.303z M164.311,122.174v55.121h45.978
-    c9.132,0,15.981-1.113,20.554-3.34c8.079-3.898,12.118-11.599,12.118-23.107c0-12.43-3.908-20.781-11.725-25.052
-    c-4.392-2.413-10.98-3.622-19.764-3.622H164.311z" transform = "rotate(-45 197.639 196.641)"/>
-</g>
-<circle fill="none" stroke="#CCCCCC" stroke-width="30.9443" cx="197.639" cy="196.641" r="176.639"/>
-</svg>
+      <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 394.962 394.953" enable-background="new 0 0 394.962 394.953" xml:space="preserve" opacity="0.1">
+        <g>
+          <path id="circler" fill="#CCCCCC" d="M252.657,92.303c7.524,3.233,13.896,7.988,19.123,14.263c4.321,5.167,7.746,10.894,10.27,17.169c2.519,6.275,3.783,13.432,3.783,21.461c0,9.694-2.459,19.229-7.364,28.596c-4.905,9.369-13.01,15.991-24.306,19.87c9.402,3.798,16.065,9.187,19.985,16.167c3.918,6.985,5.882,17.653,5.882,31.997v13.749c0,9.349,0.373,15.689,1.129,19.023c1.127,5.278,3.756,9.166,7.896,11.665v5.137h-47.062c-1.289-4.533-2.211-8.189-2.766-10.97c-1.107-5.741-1.701-11.619-1.793-17.638l-0.276-19.022c-0.176-13.05-2.428-21.753-6.759-26.104s-12.45-6.527-24.352-6.527h-41.737v80.262h-41.581V87.04h97.697C234.388,87.317,245.131,89.069,252.657,92.303z M164.311,122.174v55.121h45.978c9.132,0,15.981-1.113,20.554-3.34c8.079-3.898,12.118-11.599,12.118-23.107c0-12.43-3.908-20.781-11.725-25.052c-4.392-2.413-10.98-3.622-19.764-3.622H164.311z" transform = "rotate(-45 197.639 196.641)"/>
+        </g>
+        <circle fill="none" stroke="#CCCCCC" stroke-width="30.9443" cx="197.639" cy="196.641" r="176.639"/>
+      </svg>
 
       <div id="portfolio">Portfolio<br><p style="font-weight:normal;font-size:14pt;"><i>Under Construction</i></p></div>
 
-      <div id="footL" style="display:none;">
-        by <a href="http://mit.edu/bevacqua" target="_blank">Aidan Bevacqua</a>
+      <div id="footL">
+        by <a href="https://aidbev.com" target="_blank">Aidan Bevacqua</a>
       </div>
       <div id="footR">
         &copy; 2020 Laura Ribas Graphic Design
