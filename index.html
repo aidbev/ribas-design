@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="description" content="Laura Ribas, Graphic Design Consultant. Infinite possibilities, definite results.">
+    <meta name="viewport" content="width=1200,maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Laura Ribas Graphic Design</title>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script>
+      $(function(){
+        $("#btnhome").click(function(){
+          $("#portfolio").fadeOut();
+          $("#leftcol").fadeIn();
+          $("#rightcol").fadeIn();
+          $("#logo").fadeIn();
+        });
+        $("#btnportfolio").click(function(){
+          // var d=0;
+          // var i=setInterval(function(){document.getElementById("circler").setAttributeNS(null, "transform", "rotate("+d+" 197.639 196.641)");d+=1},20);
+          
+          //setTimeout(function(){
+            $("#logo").fadeOut();
+          //  }, 1000);
+          //setTimeout(function(){
+            $("#leftcol").fadeOut();
+            $("#rightcol").fadeOut();
+            $("#portfolio").fadeIn();
+          //}, 3000);
+        });
+      });
+    </script>
+    <style>
+      @font-face {
+        font-family:'HelveticaNeue-BlackExt';
+        src: url('s/helveticaneuelt-blackext-webfont.eot');
+        src: url('s/helveticaneuelt-blackext-webfont.eot?#iefix') format('embedded-opentype'),
+        url('s/helveticaneuelt-blackext-webfont.woff') format('woff'),
+        url('s/helveticaneuelt-blackext-webfont.ttf') format('truetype'),
+        url('s/helveticaneuelt-blackext-webfont.svg#helvetica_neue_ltregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family:'Univers49';
+        src: url('s/UniversLT-LightUltraCondensed.eot');
+        src: url('s/UniversLT-LightUltraCondensed.eot?#iefix') format('embedded-opentype'),
+        url('s/UniversLT-LightUltraCondensed.woff') format('woff'),
+        url('s/UniversLT-LightUltraCondensed.ttf') format('truetype'),
+        url('s/hUniversLT-LightUltraCondensed.svg#UniversLT-LightUltraCondensed') format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      body {
+        background-color:#333733;
+        cursor:default;
+        -webkit-user-select: none; /* Chrome/Safari */        
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+ */
+      }
+
+      #content{
+        position:relative;
+        background-color:#FFF;
+        top:20px;
+        width:1400px;
+        min-width:1000px;
+        max-width:85%;
+        height:900px;
+        max-height:90%;
+        margin-left:auto;
+        margin-right:auto;
+        -moz-box-shadow: 3px 3px 11px #111;
+        -webkit-box-shadow: 3px 3px 11px #111;
+        box-shadow: 3px 3px 11px #111;
+        overflow-y:hidden;
+        z-index:2;
+      }
+      
+      #lr {
+        position:relative;
+        left:110px;
+        top:35px;
+        font-family:"Univers49";
+        font-size:24pt;
+        font-weight:400;
+        line-height:1.8em;
+      }
+      #lr td {
+        width:70px;
+        text-align: center;
+      }
+
+      #gdwrapper,#navwrapper {
+        position:absolute;
+        top:175px;
+        width:50%;
+        height:75px;
+      }
+      #gdwrapper {
+        width:51%;
+        display:table;
+        left:0px;
+        z-index:1;
+      }
+      #gd {
+        text-align:center;
+        display:table-cell;
+        vertical-align:middle;
+        color:white;
+        font-family:"Univers49";
+        font-size:22pt;
+        font-weight:400;
+        letter-spacing:0.5em;
+        background-color:#59996F; /* orig 469C46 */
+      }
+      
+      #navwrapper {
+        background-color:#000;
+        right:0px;
+        display:table;
+        z-index:1;
+      }
+      #nav {
+        display:table-cell;
+        vertical-align:middle;
+        text-align:right;
+        font-family:"Source Sans Pro";
+        font-weight:700;
+      }
+      
+      .btn {
+        color:#59996F; /* orig 469C46 */
+        text-decoration:none;
+        padding:0 4em 0 0;
+        font-size:16pt;
+        transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease; /* Firefox 4 */
+        -webkit-transition: all 0.5s ease; /* Safari and Chrome */
+        -o-transition: all 0.5s ease; /* Opera */
+
+      }
+      .btn:hover {
+        cursor:pointer;
+        color:#EEE;
+        text-shadow: 0 0 1em #FFF;
+        transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease; /* Firefox 4 */
+        -webkit-transition: all 0.2s ease; /* Safari and Chrome */
+        -o-transition: all 0.2s ease; /* Opera */
+      }
+      
+      #leftcol,#rightcol {
+        position:absolute;
+        top:250px;
+        width:50%;
+        min-width:200px;
+        padding-top:200px;
+        height:100%;
+        font-size:14pt;
+        color:#EEE;
+        font-family:"HelveticaNeue-BlackExt";
+        letter-spacing: 0.2em;
+      }
+      #leftcol {
+        left:0px;
+        text-align:right;
+        background-color:#000;
+        float:left;
+      }
+      #rightcol {
+        right:0px;
+        background-color:#59996F; /* orig 469C46 */
+        float:right;
+      }
+
+      #portfolio{
+        position:absolute;
+        top:250px;
+        padding:30px;
+        display:none;
+        font-family:"Source Sans Pro";
+        font-weight:700;
+        font-size:22pt;
+      }
+
+      #logo {
+        position:absolute;
+        left:50%;
+        top:300px;
+        margin-left:-250px;
+        width:500px;
+      }
+
+      #footL, #footR {
+        position:absolute;
+        bottom:20px;
+        color:white;
+        font-family:"Source Sans Pro";
+      }
+      #footL{
+        left:20px;
+        font-size:12pt;
+        
+      }
+      #footL a{
+        color:#38F;
+      }
+      #footR {
+        font-size:10pt;
+        right:20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <table id="lr">
+        <tr><td>L</td><td>A</td><td>U</td><td>R</td><td>A</td></tr>
+        <tr><td>R</td><td>I</td><td>B</td><td>A</td><td>S</td></tr>
+      </table>
+      
+      <div id="gdwrapper">
+        <span id="gd">Graphic Design</span>
+      </div>
+      <div id="navwrapper">
+        <div id="nav">
+          <a id="btnhome" class="btn">home</a> 
+          <a id="btnportfolio" class="btn">portfolio</a> 
+          <a class="btn" href="mailto:laura@rib.as" target="_blank">contact</a>
+        </div>
+      </div>
+      
+      <div id="leftcol">Infinite possibilities.&nbsp;&nbsp;</div>
+      <div id="rightcol">&nbsp;&nbsp;Definite results.</div>
+
+      <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   width="500px" height="500px" viewBox="0 0 394.962 394.953" enable-background="new 0 0 394.962 394.953"
+   xml:space="preserve" opacity="0.1">
+<g>
+  <path id="circler" fill="#CCCCCC" d="M252.657,92.303c7.524,3.233,13.896,7.988,19.123,14.263c4.321,5.167,7.746,10.894,10.27,17.169
+    c2.519,6.275,3.783,13.432,3.783,21.461c0,9.694-2.459,19.229-7.364,28.596c-4.905,9.369-13.01,15.991-24.306,19.87
+    c9.402,3.798,16.065,9.187,19.985,16.167c3.918,6.985,5.882,17.653,5.882,31.997v13.749c0,9.349,0.373,15.689,1.129,19.023
+    c1.127,5.278,3.756,9.166,7.896,11.665v5.137h-47.062c-1.289-4.533-2.211-8.189-2.766-10.97
+    c-1.107-5.741-1.701-11.619-1.793-17.638l-0.276-19.022c-0.176-13.05-2.428-21.753-6.759-26.104s-12.45-6.527-24.352-6.527h-41.737
+    v80.262h-41.581V87.04h97.697C234.388,87.317,245.131,89.069,252.657,92.303z M164.311,122.174v55.121h45.978
+    c9.132,0,15.981-1.113,20.554-3.34c8.079-3.898,12.118-11.599,12.118-23.107c0-12.43-3.908-20.781-11.725-25.052
+    c-4.392-2.413-10.98-3.622-19.764-3.622H164.311z" transform = "rotate(-45 197.639 196.641)"/>
+</g>
+<circle fill="none" stroke="#CCCCCC" stroke-width="30.9443" cx="197.639" cy="196.641" r="176.639"/>
+</svg>
+
+      <div id="portfolio">Portfolio<br><p style="font-weight:normal;font-size:14pt;"><i>Under Construction</i></p></div>
+
+      <div id="footL" style="display:none;">
+        by <a href="http://mit.edu/bevacqua" target="_blank">Aidan Bevacqua</a>
+      </div>
+      <div id="footR">
+        &copy; 2013 Laura Ribas Graphic Design
+      </div>
+    </div>
+    <a href="http://validator.w3.org/check?uri=http%3A%2F%2Frib.as" style="display:none;text-decoration:none;color:#FFF;z-index:1;" target="_blank"><span style="position:absolute;bottom:20px;right:25px;font-family:'Source Sans Pro';font-size:10pt;text-align:center;"><img src="http://www.w3.org/html/logo/downloads/HTML5_Badge_32.png" alt="HTML5 logo"><br>valid HTML5</span></a>
+  </body>
+</html>
